@@ -1,0 +1,118 @@
+/* Style the wrapper */
+/* Add a background image to the wrapper */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('/login/public/assets/background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Style the title text */
+.title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style the form container */
+.form-container {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Style the slide controls */
+.slide-controls {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+    padding: 10px;
+}
+
+.slide {
+    cursor: pointer;
+    padding: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.slide:hover {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+#login:checked ~ .slide.login,
+#signup:checked ~ .slide.signup {
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Style the slider tab */
+.slider-tab {
+    width: 50%;
+    height: 100%;
+    background-color: #007BFF;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+#signup:checked ~ .slider-tab {
+    transform: translateX(100%);
+}
+
+/* Style the form inner container */
+.form-inner {
+    padding: 20px;
+}
+
+/* Style the form fields */
+.field {
+    margin-bottom: 15px;
+}
+
+.field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Style the login button */
+.field.btn {
+    text-align: center;
+}
+
+.btn-layer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
