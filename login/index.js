@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const expressValidator = require('express-validator');
 const session = require('express-session'); 
 const { v4: uuidv4 } = require('uuid'); // Use v4 for random UUIDs 
-const router = require('./routes/router');
+const router = require('./router');
 
 //create the server
 const app = express();
